@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/mouem/css/style.css">
+  <link rel="stylesheet"  href="/mouem/plugin/lightslider.css"/>
+
   <title>Mouem</title>
 </head>
 <body>
@@ -34,6 +37,62 @@
       </ul>
     </div>
   </header>
+  <div class="item">      
+    <form action="#" method="get" class="searchBox">
+      <input type="search" class="searchBar"placeholder="검색어를 입력해주세요.">
+      <button><i class="fa fa-search"></i></button>
+    </form>      
+      <div class="clearfix">
+          <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+            <li> 
+              <img src="/mouem/img/main1.jpg" />
+            </li>
+            <li> 
+              <img src="/mouem/img/main2.jpg" />
+            </li>
+            <li> 
+              <img src="/mouem/img/main3.jpg" />
+            </li>
+            <li> 
+              <img src="/mouem/img/main4.jpg" />
+            </li>
+          </ul>
+      </div>
+  </div>
 
+  <div class="containerBox">
+    <div class="leftBox">
+      <ul class="leftTopBox">
+        <div class="leftTopImg">
+          <img src="/mouem/img/.jpg" alt="">
+        </div>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/mouem/plugin/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                slideMargin: 0,
+                speed:1500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
 </body>
 </html>

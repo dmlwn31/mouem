@@ -9,14 +9,27 @@ a{text-decoration: none; color:#000;}
 
 /* header style */
 .logo{width:100%; height:auto; text-align: center; margin:30px 0 0 0;}
-.logo img{width:300px; height:auto;}
+.logo img{width:200px; height:auto;}
 
 .login{width:100%; height:auto;}
 .login p{position:absolute; right:50px; font-weight: bold;}
 
 
 .nav{width:100%; height:auto; background:#69b0ff; margin-top:25px;}
-.nav .navTit{display:flex; width:100%;height:auto; max-width: 1200px; margin:0 auto;}
-.nav .navTit li{font-size:30px;  font-weight: bold; width:175px; height:auto; text-align: center;  padding:15px 0;}
+.nav .navTit{display:flex; width:100%;height:auto; max-width: 900px; margin:0 auto;}
+.nav .navTit li{font-size:20px;  font-weight: bold; width:175px; height:auto; text-align: center;  padding:15px 0;}
 .nav .navTit li:hover{background:#005fcc; }
 .nav .navTit li a{color:#fff;}
+
+/* body style */
+.item{width:100%; height:450px; overflow:hidden; margin-top:10px;}
+.item img{width:1910px; height:auto; }
+
+.item .searchBox{  position:absolute; top:400px;  z-index: 999; left:50%; transform:translate(-50%, -50%); }
+.item .searchBox input{width:600px; height:40px;}
+.item .searchBox input::-webkit-search-cancel-button,
+.item .searchBox input::-webkit-search-results-button,
+.item .searchBox input::-webkit-search-results-decoration{display:none;}
+.item .searchBox button{width:50px; height:40px; position:absolute; right:0px; background:rgba(255, 255, 255, 0); border:0;}
+.item .searchBox input::-webkit-search-decoration,
+.item .searchBox button i{font-size:20px;}
