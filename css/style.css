@@ -33,3 +33,23 @@ a{text-decoration: none; color:#000;}
 .item .searchBox button{width:50px; height:40px; position:absolute; right:0px; background:rgba(255, 255, 255, 0); border:0;}
 .item .searchBox input::-webkit-search-decoration,
 .item .searchBox button i{font-size:20px;}
+
+
+/* product type section style */
+.product{background:#eee; margin-top:40px;}
+.center{ padding:50px 0;max-width: 1200px; margin:0 auto;}
+.productBox{width:100%; height:auto; display:flex;}
+
+.productBox .boxLeft{width:50%; height:auto; }
+.productCon{width:100%; height:288px; display:flex; margin-bottom:20px; border:2px solid #69b0ff;}
+.productCon .productImg{width:50%; height:auto; overflow:hidden;  }
+.productCon .productImg img{width:auto; height:100%; display : block;margin:auto; }
+.productCon .productImg .firstImg{margin-left:-80px;}
+.productCon .productTxt{width:50%; height:auto; background:#fff; padding:20px;}
+.productCon .productTxt h3{font-size:25px; font-weight: bold; margin:20px 0;}
+
+.boxRight{width:50%; height:auto; border:2px solid #69b0ff; margin-left:30px; overflow:hidden; background:#fff;}
+.boxRight .rightImg{width:100%; height:auto;}
+.productCon .productTxt{width:50%; height:auto; background:#fff; padding:20px;}
+.productCon .productTxt h2{font-size:25px; font-weight: bold; margin:20px 0;}
+
