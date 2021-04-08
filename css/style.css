@@ -41,7 +41,7 @@ a{text-decoration: none; color:#000;}
 .productBox{width:100%; height:auto; display:flex;}
 
 .productBox .boxLeft{width:50%; height:auto; }
-.productCon{width:100%; height:288px; display:flex; margin-bottom:20px; border:2px solid #69b0ff;}
+.productCon{width:100%; height:288px; display:flex; margin-top:10px; border:2px solid #69b0ff;}
 .productCon .productImg{width:50%; height:auto; overflow:hidden;  }
 .productCon .productImg img{width:auto; height:100%; display : block;margin:auto; }
 .productCon .productImg .firstImg{margin-left:-80px;}
@@ -50,6 +50,12 @@ a{text-decoration: none; color:#000;}
 
 .boxRight{width:50%; height:auto; border:2px solid #69b0ff; margin-left:30px; overflow:hidden; background:#fff;}
 .boxRight .rightImg{width:100%; height:auto;}
-.productCon .productTxt{width:50%; height:auto; background:#fff; padding:20px;}
-.productCon .productTxt h2{font-size:25px; font-weight: bold; margin:20px 0;}
+.boxRight  .productTxt{width:90%; height:auto; background:#fff; padding:0 20px 20px 20px;}
+.boxRight  .productTxt h2{font-size:25px; font-weight: bold; margin-bottom:10px;}
 
+footer{width:100%; height:auto; margin-top:50px; background:#69b0ff; color:#fff; padding:40px 0; text-align: center; }
+.footerBox{justify-content: center; text-align: center;}
+.footerBox .con{width:250px; height:auto; display:flex; margin:auto; padding:10px 0;}
+.footerBox .con li{margin:0 25px; font-size:20px;}
+.footerBox .con li a i{color:#fff;  border-radius: 50px solid #fff;}
+.footerBox p{margin:10px 0;}
